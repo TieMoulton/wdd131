@@ -71,6 +71,12 @@ footer {
     padding: 1rem;
 }
 
+.weather h2::after {
+    content: ' 🌤';
+    font-size: 2rem;
+    margin-left: 10px;
+}
+
 /* Mobile View CSS - Default for small screens */
 @media (max-width: 600px) {
     header h1 {
