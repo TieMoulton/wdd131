@@ -13,7 +13,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: var(--text-color);
     background-color: var(--bg-color);
 }
@@ -27,31 +27,38 @@ header {
 
 .hero {
     position: relative;
+    margin-bottom: 20px;
 }
 
 .hero img {
     width: 100%;
+    height: auto;
     display: block;
 }
 
 section.data, section.weather {
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0.85); /* Semi-transparent white */
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.95); /* Increased opacity for better contrast */
     border-radius: 8px;
     padding: 1rem;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     width: 250px;
+    margin: 20px auto;
 }
 
 /* Position the "Data" section on the left over the image */
 section.data {
-    top: 390px; /* Adjust this value as needed */
-    left: 30px; /* Adjust this value as needed */
+    float: left;
+    width: 250px;
+    margin-left: 10px;
+    margin-top: -300px;
 }
 
 section.weather {
-    top: 80px; /* Align with Data */
-    right: 30px; /* Position it on the right */
+    float: right;
+    width: 250px;
+    margin-right: 10px;
+    margin-top: -400px;
 }
 
 section.data ul, section.weather ul {
@@ -89,13 +96,18 @@ footer {
     }
 
     section.data, section.weather {
-        position: static; /* Reset to normal flow in mobile view */
-        margin: 1rem;
         width: auto;
+        float: none;
+        margin: 1rem;
+        padding: 10px;
     }
 
     footer p {
         font-size: 0.875rem;
+    }
+
+    .weather h2::after {
+        content: ''; /* Hide pseudo-element in mobile view */
     }
 }
 

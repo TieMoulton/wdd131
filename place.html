@@ -18,7 +18,11 @@
     </header>
 
     <section class="hero">
-        <img src="images/overview.jpg" alt="Hawaii Beach" srcset="images/overview.jpg 600w, images/overview.jpg 1200w" sizes="(max-width: 600px) 600px, 1200px">
+        <picture>
+            <source srcset="images/beach.jpg" media="(max-width: 600px)">
+            <source srcset="images/overview.jpg" media="(min-width: 600px)">
+            <img src="images/overview.jpg" alt="Hawaii Beach">
+        </picture>
     </section>
 
     <section class="data">
@@ -37,7 +41,6 @@
 
     <section class="weather">
         <h2>Weather</h2>
-        <div class="weather-icon">⛅</div>
         <ul>
             <li><strong>Temperature:</strong> 25°C</li>
             <li><strong>Conditions:</strong> Partly Cloudy</li>
