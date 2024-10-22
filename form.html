@@ -1,12 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Review Form</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <script defer src="scripts/script.js"></script>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Ty Moulton">
+        <meta name="description" content="A product review form allowing users to rate products and leave reviews on the site.">
+        
+        <title>Product Review Form</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/style.css">
+        
+        <script defer src="scripts/script.js"></script>
+    </head>
+    
 <body>
     <section class="form-container">
         <h1>Product Review</h1>
@@ -15,10 +24,10 @@
             <label for="productName">Product Name:</label>
             <select id="productName" name="productName" required>
                 <option value="" disabled selected>Select a Product ...</option>
-                <!-- Options populated by JavaScript -->
+                <!--added javascript -->
             </select>
             
-            <label for="rating">Overall Rating:</label>
+            <label>Overall Rating:</label>
             <div class="rating">
                 <input type="radio" id="star5" name="rating" value="5" required>
                 <label for="star5">★</label>
