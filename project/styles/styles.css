@@ -11,7 +11,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #1b5e20;
+    background-color: #1b5e20; /* Dark green to match footer */
     padding: 15px;
 }
 
@@ -28,7 +28,7 @@ nav ul {
 }
 
 nav ul li a {
-    color: #ededed;
+    color: #f0f4c3;
     text-decoration: none;
     font-weight: bold;
     padding: 5px 10px;
@@ -40,35 +40,59 @@ nav ul li a.active {
     color: #fff;
 }
 
-main {
-    text-align: center;
-    padding: 20px;
-}
-
-main h1 {
-    font-family: Georgia, serif;
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.main-image {
-    width: 80%;
-    max-width: 600px;
-    margin-top: 20px;
-    border-radius: 10px;
-}
-
-section {
-    margin-top: 20px;
-}
-
-section img {
+/* Full-width hero image with centered overlay text */
+.hero-image {
+    position: relative;
     width: 100%;
-    max-width: 500px;
-    border-radius: 10px;
-    margin-top: 10px;
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove any default margins */
+    padding: 0; /* Remove any padding */
+    overflow: hidden;
 }
 
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    background-color: rgba(27, 94, 32, 0.8); /* Dark green with transparency */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 80%;
+    z-index: 1;
+}
+
+.hero-text h1, .hero-text h2 {
+    font-family: Georgia, serif;
+    font-size: 2em;
+    margin: 0 0 10px;
+}
+
+.hero-text p {
+    font-size: 1.1em;
+}
+
+/* Styling to remove gaps between location sections */
+.locations {
+    padding: 0; /* Remove padding for seamless transition */
+}
+
+.locations .hero-image {
+    margin-bottom: 0; /* Ensure no gaps between each section */
+}
+
+/* Footer styling */
 footer {
     background-color: #1b5e20;
     color: #fff;
@@ -88,7 +112,12 @@ footer a {
         align-items: center;
     }
     
-    .main-image, section img {
-        width: 90%;
+    .hero-text {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .hero-text h1, .hero-text h2 {
+        font-size: 1.5em;
     }
 }

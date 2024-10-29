@@ -9,7 +9,6 @@
 <body>
     <header>
         <div class="header-content">
-            <img src="path/to/logo.png" alt="Logo" class="logo">
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -18,31 +17,52 @@
                     <li><a href="hiking.html">Hiking</a></li>
                 </ul>
             </nav>
-            <img src="path/to/profile.png" alt="Profile Image" class="profile">
         </div>
     </header>
 
     <main>
-        <h1>Top Fishing Spots in Idaho</h1>
+        <!-- Main Hero Section for Fishing Page -->
+        <div class="hero-image">
+            <div class="hero-text">
+                <h1>Welcome to Idaho Outdoor Explorer!</h1>
+                <p>Explore Idaho's best fishing locations, ideal for anglers of all levels.</p>
+            </div>
+            <img src="https://tiemoulton.github.io/wdd131/project/images/main.jpg" alt="Fishing in Idaho" class="background-image">
+        </div>
 
-        <section>
-            <h3>1. Silver Creek</h3>
-            <p>Known for fly fishing, Silver Creek offers crystal-clear waters perfect for trout fishing.</p>
-            <img data-src="path/to/silver-creek.jpg" alt="Silver Creek Fishing Spot">
+        <!-- Full-width Location Images with Text Overlay for each fishing spot -->
+        <section class="locations">
+            <!-- First Location (Silver Creek) -->
+            <div class="hero-image">
+                <div class="hero-text">
+                    <h2>Silver Creek</h2>
+                    <p>Known for fly fishing, Silver Creek offers crystal-clear waters perfect for trout fishing.</p>
+                </div>
+                <img src="https://tiemoulton.github.io/wdd131/project/images/silvercreek.webp" alt="Silver Creek Fishing Spot" class="background-image">
+            </div>
 
-            <h3>2. Lake Pend Oreille</h3>
-            <p>Idaho’s largest lake, offering trophy rainbow trout and kokanee salmon.</p>
-            <img data-src="path/to/lake-pend-oreille.jpg" alt="Lake Pend Oreille Fishing Spot">
+            <!-- Second Location (Lake Pend Oreille) -->
+            <div class="hero-image">
+                <div class="hero-text">
+                    <h2>Lake Pend Oreille</h2>
+                    <p>Idaho’s largest lake, offering trophy rainbow trout and kokanee salmon.</p>
+                </div>
+                <img src="https://tiemoulton.github.io/wdd131/project/images/lakepend.jpg" alt="Lake Pend Oreille Fishing Spot" class="background-image">
+            </div>
 
-            <h3>3. South Fork of the Boise River</h3>
-            <p>Rugged river with abundant wild rainbow trout, ideal for adventurous anglers.</p>
-            <img data-src="path/to/south-fork-boise.jpg" alt="South Fork Boise River Fishing Spot">
+            <!-- Third Location (South Fork of the Boise River) -->
+            <div class="hero-image">
+                <div class="hero-text">
+                    <h2>South Fork of the Boise River</h2>
+                    <p>Rugged river with abundant wild rainbow trout, ideal for adventurous anglers.</p>
+                </div>
+                <img src="https://tiemoulton.github.io/wdd131/project/images/southfork.png" alt="South Fork Boise River Fishing Spot" class="background-image">
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Idaho Outdoor Explorer</p>
-        <a href="attributions.html">Image & Content Attributions</a>
+        <p>&copy; Ty Moulton</p>
     </footer>
 
     <script src="scripts/script.js" defer></script>
